@@ -8,4 +8,9 @@ class AnimesController <ApplicationController
 
 	end
 
+	def create
+       Anime.create(name: params[:name])
+       redirect_to '/animes'
+	end
+
 end
