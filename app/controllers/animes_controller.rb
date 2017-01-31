@@ -4,4 +4,8 @@ class AnimesController <ApplicationController
 		@animes = Anime.all
 	end
 
+	def new
+
+	end
+
 end
