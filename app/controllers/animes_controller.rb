@@ -17,4 +17,8 @@ class AnimesController <ApplicationController
        @animes=Anime.find(params[:id])
     end
 
+    def edit 
+    	@animes=Anime.find(params[:id])
+    end
+
 end
