@@ -13,4 +13,8 @@ class AnimesController <ApplicationController
        redirect_to '/animes'
 	end
 
+	def show 
+       @animes=Anime.find(params[:id])
+    end
+
 end

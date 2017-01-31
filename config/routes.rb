@@ -5,7 +5,8 @@ get 'animes' => 'animes#index'
 get 'animes/new' => 'animes#new'
 
 post '/animes' =>'animes#create'
-  # The priority is based upon order of creation: first created -> highest priority.
+
+get 'animes/:id' => 'animes#show' # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
